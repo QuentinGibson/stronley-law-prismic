@@ -9,31 +9,22 @@
 					{
 						"type": "heading1",
 						"content": {
-							"text": "Aware"
-						}
-					}
-				]
-			},
-			"body": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Elit ex occaecat cupidatat. Labore fugiat nostrud minim anim laboris veniam minim ullamco veniam id nostrud culpa. Lorem deserunt adipisicing nisi deserunt irure."
-						}
+							"text": "STROLENY LAW, P.A.",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
 			"primary_cta": {
 				"__TYPE__": "FieldContent",
-				"value": "characteristic",
-				"type": "Text"
+				"type": "Text",
+				"value": "Request Consolation"
 			},
 			"secondary_cta": {
 				"__TYPE__": "FieldContent",
-				"value": "church",
-				"type": "Text"
+				"type": "Text",
+				"value": "Learn More"
 			},
 			"primary_link": {
 				"__TYPE__": "LinkContent",
@@ -50,14 +41,13 @@
 				}
 			},
 			"background_image": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1547082299-de196ea013d6",
 					"width": 4272,
 					"height": 2848
 				},
-				"url": "https://images.unsplash.com/photo-1547082299-de196ea013d6",
+				"url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?rect=0%2C0%2C4272%2C2848&w=4272&h=2848",
 				"width": 4272,
 				"height": 2848,
 				"edit": {
@@ -68,7 +58,34 @@
 					},
 					"background": "transparent"
 				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Our personalized service doesn’t end at the consultation - Stroleny Law, P.A. takes pride in providing a client experience - oriented approach.",
+							"spans": [
+								{
+									"type": "strong",
+									"start": 4,
+									"end": 24
+								},
+								{
+									"type": "strong",
+									"start": 105,
+									"end": 143
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
 			}
 		},
 		"items": []

@@ -4,7 +4,75 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-type HomeDocumentDataSlicesSlice = never;
+/**
+ * Content for Case Result documents
+ */
+interface CaseResultDocumentData {
+  /**
+   * Title field in *Case Result*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: case_result.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * date field in *Case Result*
+   *
+   * - **Field Type**: Date
+   * - **Placeholder**: *None*
+   * - **API ID Path**: case_result.date
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#date
+   */
+  date: prismic.DateField;
+
+  /**
+   * body field in *Case Result*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: case_result.body
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  body: prismic.RichTextField;
+
+  /**
+   * Result field in *Case Result*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: case_result.result
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  result: prismic.TitleField;
+}
+
+/**
+ * Case Result document from Prismic
+ *
+ * - **API ID**: `case_result`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type CaseResultDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<CaseResultDocumentData>,
+    "case_result",
+    Lang
+  >;
+
+type HomeDocumentDataSlicesSlice =
+  | BiographySlice
+  | CaseResultsSlice
+  | HeroSlice;
 
 /**
  * Content for Home documents
@@ -137,7 +205,192 @@ interface PageDocumentData {
 export type PageDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<PageDocumentData>, "page", Lang>;
 
-export type AllDocumentTypes = HomeDocument | PageDocument;
+export type AllDocumentTypes = CaseResultDocument | HomeDocument | PageDocument;
+
+/**
+ * Primary content in *Biography → Primary*
+ */
+export interface BiographySliceDefaultPrimary {
+  /**
+   * Title field in *Biography → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: biography.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * biography field in *Biography → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: biography.primary.biography
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  biography: prismic.RichTextField;
+
+  /**
+   * Avatar field in *Biography → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: biography.primary.avatar
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  avatar: prismic.ImageField<never>;
+
+  /**
+   * Job Title field in *Biography → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: biography.primary.job_title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  job_title: prismic.RichTextField;
+
+  /**
+   * Button Label field in *Biography → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: biography.primary.button_label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button_label: prismic.KeyTextField;
+
+  /**
+   * Button Link field in *Biography → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: biography.primary.button_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  button_link: prismic.LinkField;
+
+  /**
+   * Award Title field in *Biography → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: biography.primary.award_title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  award_title: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *Biography → Items*
+ */
+export interface BiographySliceDefaultItem {
+  /**
+   * Award field in *Biography → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: biography.items[].award
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  award: prismic.ImageField<never>;
+}
+
+/**
+ * Default variation for Biography Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BiographySliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<BiographySliceDefaultPrimary>,
+  Simplify<BiographySliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *Biography*
+ */
+type BiographySliceVariation = BiographySliceDefault;
+
+/**
+ * Biography Shared Slice
+ *
+ * - **API ID**: `biography`
+ * - **Description**: Biography
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BiographySlice = prismic.SharedSlice<
+  "biography",
+  BiographySliceVariation
+>;
+
+/**
+ * Primary content in *CaseResults → Primary*
+ */
+export interface CaseResultsSliceDefaultPrimary {
+  /**
+   * TItle field in *CaseResults → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: case_results.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.TitleField;
+
+  /**
+   * Button Label field in *CaseResults → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: case_results.primary.button_label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button_label: prismic.KeyTextField;
+
+  /**
+   * Button Link field in *CaseResults → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: case_results.primary.button_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  button_link: prismic.LinkField;
+}
+
+/**
+ * Default variation for CaseResults Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CaseResultsSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<CaseResultsSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *CaseResults*
+ */
+type CaseResultsSliceVariation = CaseResultsSliceDefault;
+
+/**
+ * CaseResults Shared Slice
+ *
+ * - **API ID**: `case_results`
+ * - **Description**: CaseResults
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CaseResultsSlice = prismic.SharedSlice<
+  "case_results",
+  CaseResultsSliceVariation
+>;
 
 /**
  * Primary content in *Hero → Primary*
@@ -296,6 +549,8 @@ declare module "@prismicio/client" {
 
   namespace Content {
     export type {
+      CaseResultDocument,
+      CaseResultDocumentData,
       HomeDocument,
       HomeDocumentData,
       HomeDocumentDataSlicesSlice,
@@ -303,6 +558,15 @@ declare module "@prismicio/client" {
       PageDocumentData,
       PageDocumentDataSlicesSlice,
       AllDocumentTypes,
+      BiographySlice,
+      BiographySliceDefaultPrimary,
+      BiographySliceDefaultItem,
+      BiographySliceVariation,
+      BiographySliceDefault,
+      CaseResultsSlice,
+      CaseResultsSliceDefaultPrimary,
+      CaseResultsSliceVariation,
+      CaseResultsSliceDefault,
       HeroSlice,
       HeroSliceDefaultPrimary,
       HeroSliceVariation,

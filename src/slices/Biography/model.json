@@ -1,0 +1,87 @@
+{
+  "id": "biography",
+  "type": "SharedSlice",
+  "name": "Biography",
+  "description": "Biography",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2"
+          }
+        },
+        "biography": {
+          "type": "StructuredText",
+          "config": {
+            "label": "biography",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,hyperlink"
+          }
+        },
+        "avatar": {
+          "type": "Image",
+          "config": {
+            "label": "Avatar",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "job_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Job Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,em"
+          }
+        },
+        "button_label": {
+          "type": "Text",
+          "config": {
+            "label": "Button Label",
+            "placeholder": ""
+          }
+        },
+        "button_link": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "award_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Award Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {
+        "award": {
+          "type": "Image",
+          "config": {
+            "label": "Award",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}

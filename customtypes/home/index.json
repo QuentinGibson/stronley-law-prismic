@@ -1,14 +1,27 @@
 {
   "format": "page",
   "id": "home",
+  "label": "Home",
+  "repeatable": false,
+  "status": true,
   "json": {
     "Main": {
       "slices": {
-        "config": {
-          "choices": {}
-        },
+        "type": "Slices",
         "fieldset": "Slice Zone",
-        "type": "Slices"
+        "config": {
+          "choices": {
+            "biography": {
+              "type": "SharedSlice"
+            },
+            "case_results": {
+              "type": "SharedSlice"
+            },
+            "hero": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
     },
     "SEO & Metadata": {
@@ -38,8 +51,5 @@
         "type": "Text"
       }
     }
-  },
-  "label": "Home",
-  "repeatable": false,
-  "status": true
+  }
 }
