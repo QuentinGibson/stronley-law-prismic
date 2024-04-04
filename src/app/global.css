@@ -5,3 +5,7 @@
 .blue-triangle-left {
   clip-path: polygon(0 0, 0 100%, 100% 100%);
 }
+
+.blue-triangle-right {
+  clip-path: polygon(100% 0px, 0px 100%, 100% 100%)
+}

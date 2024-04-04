@@ -11,6 +11,9 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "about_law_firm": {
+              "type": "SharedSlice"
+            },
             "biography": {
               "type": "SharedSlice"
             },

@@ -70,6 +70,7 @@ export type CaseResultDocument<Lang extends string = string> =
   >;
 
 type HomeDocumentDataSlicesSlice =
+  | AboutLawFirmSlice
   | BiographySlice
   | CaseResultsSlice
   | HeroSlice;
@@ -208,18 +209,83 @@ export type PageDocument<Lang extends string = string> =
 export type AllDocumentTypes = CaseResultDocument | HomeDocument | PageDocument;
 
 /**
+ * Primary content in *AboutLawFirm → Primary*
+ */
+export interface AboutLawFirmSliceDefaultPrimary {
+  /**
+   * Title field in *AboutLawFirm → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_law_firm.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.TitleField;
+
+  /**
+   * body field in *AboutLawFirm → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_law_firm.primary.body
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  body: prismic.RichTextField;
+
+  /**
+   * Image field in *AboutLawFirm → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_law_firm.primary.image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+}
+
+/**
+ * Default variation for AboutLawFirm Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AboutLawFirmSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<AboutLawFirmSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *AboutLawFirm*
+ */
+type AboutLawFirmSliceVariation = AboutLawFirmSliceDefault;
+
+/**
+ * AboutLawFirm Shared Slice
+ *
+ * - **API ID**: `about_law_firm`
+ * - **Description**: AboutLawFirm
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AboutLawFirmSlice = prismic.SharedSlice<
+  "about_law_firm",
+  AboutLawFirmSliceVariation
+>;
+
+/**
  * Primary content in *Biography → Primary*
  */
 export interface BiographySliceDefaultPrimary {
   /**
    * Title field in *Biography → Primary*
    *
-   * - **Field Type**: Rich Text
+   * - **Field Type**: Title
    * - **Placeholder**: *None*
    * - **API ID Path**: biography.primary.title
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  title: prismic.RichTextField;
+  title: prismic.TitleField;
 
   /**
    * biography field in *Biography → Primary*
@@ -558,6 +624,10 @@ declare module "@prismicio/client" {
       PageDocumentData,
       PageDocumentDataSlicesSlice,
       AllDocumentTypes,
+      AboutLawFirmSlice,
+      AboutLawFirmSliceDefaultPrimary,
+      AboutLawFirmSliceVariation,
+      AboutLawFirmSliceDefault,
       BiographySlice,
       BiographySliceDefaultPrimary,
       BiographySliceDefaultItem,

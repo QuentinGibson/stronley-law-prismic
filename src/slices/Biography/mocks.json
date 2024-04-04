@@ -9,33 +9,12 @@
 					{
 						"type": "heading2",
 						"content": {
-							"text": "Language"
-						}
+							"text": "MIAMI CRIMINAL LAWYER",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
-			},
-			"avatar": {
-				"origin": {
-					"id": "main",
-					"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-					"width": 3882,
-					"height": 2584
-				},
-				"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-				"width": 3882,
-				"height": 2584,
-				"edit": {
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 0
-					},
-					"background": "transparent"
-				},
-				"credits": null,
-				"alt": null,
-				"__TYPE__": "ImageContent",
-				"thumbnails": {}
 			},
 			"biography": {
 				"__TYPE__": "StructuredTextContent",
@@ -43,8 +22,29 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Occaecat commodo et est quis reprehenderit elit proident et eiusmod nostrud cupidatat do in."
-						}
+							"text": "If you have been arrested or are facing a criminal charge, you may feel as if your entire world has just turned upside down. That is when you need to reach out to our Miami criminal defense attorney at Stroleny Law, P. A., a former Florida state prosecutor. We understand that anybody can make a mistake or be in the wrong place at the wrong time. When you work with our criminal defense team in Miami FL, you will always be treated with respect while your attorney prepares an aggressive defense. ",
+							"spans": [
+								{
+									"type": "hyperlink",
+									"start": 166,
+									"end": 198,
+									"data": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://www.google.com/maps?cid=14806271113008571804",
+										"target": "_blank"
+									}
+								}
+							]
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "At our Miami criminal defense law firm, we will take the time to hear all about your alleged criminal offense with care and compassion, providing you with non-judgmental legal guidance at a point in time when you need it most.",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -52,17 +52,20 @@
 				"__TYPE__": "StructuredTextContent",
 				"value": [
 					{
-						"type": "paragraph",
+						"type": "heading3",
 						"content": {
-							"text": "Deserunt non in dolor fugiat labore laborum et in."
-						}
+							"text": "Julian Stroleny, Attorney at Law",
+							"spans": [
+								{
+									"type": "em",
+									"start": 0,
+									"end": 32
+								}
+							]
+						},
+						"direction": "ltr"
 					}
 				]
-			},
-			"button_label": {
-				"__TYPE__": "FieldContent",
-				"value": "horn",
-				"type": "Text"
 			},
 			"button_link": {
 				"__TYPE__": "LinkContent",
@@ -75,12 +78,42 @@
 				"__TYPE__": "StructuredTextContent",
 				"value": [
 					{
-						"type": "paragraph",
+						"type": "heading3",
 						"content": {
-							"text": "Fugiat consequat aute elit Lorem non esse id quis fugiat laboris exercitation ut aute cupidatat. Lorem aliquip veniam magna excepteur. Id sit esse eu voluptate."
-						}
+							"text": "FEATURED AWARDS",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
+			},
+			"avatar": {
+				"url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxhdmF0YXJ8ZW58MHx8fHwxNzEyMTc3MjkzfDA&ixlib=rb-4.0.3&q=85",
+				"alt": "woman in white crew neck shirt smiling",
+				"origin": {
+					"id": "IF9TK5Uy-KI",
+					"url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxhdmF0YXJ8ZW58MHx8fHwxNzEyMTc3MjkzfDA&ixlib=rb-4.0.3&q=85",
+					"width": 3974,
+					"height": 5000
+				},
+				"width": 3974,
+				"height": 5000,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Read About Attorney"
 			}
 		},
 		"items": [
@@ -91,25 +124,115 @@
 						"award",
 						{
 							"origin": {
-								"id": "main",
-								"url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
-								"width": 4016,
-								"height": 6016
+								"id": "ZdqSuxl3Lak",
+								"url": "https://images.unsplash.com/photo-1614036417651-efe5912149d8?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxhd2FyZHxlbnwwfHx8fDE3MTIxNzg3MzR8MA&ixlib=rb-4.0.3&q=85",
+								"width": 5032,
+								"height": 3179
 							},
-							"url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
-							"width": 4016,
-							"height": 6016,
+							"url": "https://images.unsplash.com/photo-1614036417651-efe5912149d8?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxhd2FyZHxlbnwwfHx8fDE3MTIxNzg3MzR8MA&ixlib=rb-4.0.3&q=85&rect=927%2C0%2C3179%2C3179&w=120&h=120",
+							"width": 120,
+							"height": 120,
 							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 927,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"alt": "yellow and white star illustration",
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"award",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1578269174936-2709b6aeb913?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxhd2FyZHxlbnwwfHx8fDE3MTIxNzg3MzR8MA&ixlib=rb-4.0.3&q=85&rect=881%2C0%2C3521%2C3521&w=120&h=120",
+							"alt": "yellow and white trophy",
+							"origin": {
+								"id": "_XTY6lD8jgM",
+								"url": "https://images.unsplash.com/photo-1578269174936-2709b6aeb913?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxhd2FyZHxlbnwwfHx8fDE3MTIxNzg3MzR8MA&ixlib=rb-4.0.3&q=85",
+								"width": 5282,
+								"height": 3521
+							},
+							"width": 120,
+							"height": 120,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 881,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"award",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1577234286642-fc512a5f8f11?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTIxMjQxOTJ8MA&ixlib=rb-4.0.3&q=85&rect=0%2C504%2C3024%2C3024&w=120&h=120",
+							"alt": "sliced grapefruits",
+							"origin": {
+								"id": "ezSFnAFi9hY",
+								"url": "https://images.unsplash.com/photo-1577234286642-fc512a5f8f11?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTIxMjQxOTJ8MA&ixlib=rb-4.0.3&q=85",
+								"width": 3024,
+								"height": 4032
+							},
+							"width": 120,
+							"height": 120,
+							"edit": {
+								"background": "transparent",
 								"zoom": 1,
 								"crop": {
 									"x": 0,
-									"y": 0
-								},
-								"background": "transparent"
+									"y": 504
+								}
 							},
-							"credits": null,
-							"alt": null,
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"award",
+						{
 							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1580428180098-24b353d7e9d9?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Y3liZXJwdW5rfGVufDB8fHx8MTcxMjIwNDU4Nnww&ixlib=rb-4.0.3&q=85&rect=0%2C500%2C4000%2C4000&w=120&h=120",
+							"alt": "woman in black framed eyeglasses and brown fur coat",
+							"origin": {
+								"id": "Lme2Ye2jVo8",
+								"url": "https://images.unsplash.com/photo-1580428180098-24b353d7e9d9?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Y3liZXJwdW5rfGVufDB8fHx8MTcxMjIwNDU4Nnww&ixlib=rb-4.0.3&q=85",
+								"width": 4000,
+								"height": 5000
+							},
+							"width": 120,
+							"height": 120,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 500
+								}
+							},
 							"thumbnails": {}
 						}
 					]

@@ -18,7 +18,7 @@
             "label": "Title",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "heading2"
+            "single": "heading2"
           }
         },
         "biography": {
@@ -44,7 +44,7 @@
             "label": "Job Title",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "paragraph,em"
+            "single": "em,heading3"
           }
         },
         "button_label": {
@@ -68,7 +68,7 @@
             "label": "Award Title",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "multi": "heading3"
           }
         }
       },
@@ -77,7 +77,10 @@
           "type": "Image",
           "config": {
             "label": "Award",
-            "constraint": {},
+            "constraint": {
+              "width": 120,
+              "height": 120
+            },
             "thumbnails": []
           }
         }
