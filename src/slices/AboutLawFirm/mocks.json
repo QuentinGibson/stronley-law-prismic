@@ -9,8 +9,10 @@
 					{
 						"type": "heading2",
 						"content": {
-							"text": "Shaking"
-						}
+							"text": "ABOUT STROLENY LAW, P. A.",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -20,29 +22,32 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Quis qui do labore consectetur ullamco cupidatat. Culpa labore labore nulla pariatur culpa esse labore elit est duis fugiat cupidatat."
-						}
+							"text": "Stroleny Law, P.A. is an award-winning Miami criminal law firm that promises a former state prosecutor will handle every client’s case. Experienced criminal defense lawyer Julian Stroleny has handled thousands of cases and will work tirelessly to get you the best possible results. Stroleny Law, P.A. understands you may need a Miami criminal defense lawyer available after hours, so the firm offers free consultations 24 hours a day, seven days a week. Stroleny Law, P.A. takes pride in providing a client experience-oriented approach to legal services.",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
 			"image": {
 				"__TYPE__": "ImageContent",
+				"url": "https://images.unsplash.com/photo-1606542758304-820b04394ac2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMXx8Y3liZXJwdW5rfGVufDB8fHx8MTcxMjM0NTYzOXww&ixlib=rb-4.0.3&q=85&rect=0%2C925%2C3231%2C2189&w=620&h=420",
+				"alt": "woman in white long sleeve shirt wearing helmet",
 				"origin": {
-					"id": "main",
-					"url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f",
-					"width": 6000,
-					"height": 4000
+					"id": "Wxq7U4jaPfM",
+					"url": "https://images.unsplash.com/photo-1606542758304-820b04394ac2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMXx8Y3liZXJwdW5rfGVufDB8fHx8MTcxMjM0NTYzOXww&ixlib=rb-4.0.3&q=85",
+					"width": 3231,
+					"height": 4039
 				},
-				"url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?rect=48%2C0%2C5905%2C4000&w=620&h=420",
 				"width": 620,
 				"height": 420,
 				"edit": {
+					"background": "transparent",
 					"zoom": 1,
 					"crop": {
-						"x": 48,
-						"y": 0
-					},
-					"background": "transparent"
+						"x": 0,
+						"y": 925
+					}
 				},
 				"thumbnails": {}
 			}
