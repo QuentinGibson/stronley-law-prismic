@@ -208,7 +208,7 @@ interface PageDocumentData {
 export type PageDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<PageDocumentData>, "page", Lang>;
 
-type PraticeareaDocumentDataSlicesSlice = CtaSlice;
+type PraticeareaDocumentDataSlicesSlice = never;
 
 /**
  * Content for PraticeArea documents
@@ -328,11 +328,66 @@ export type PraticeareaDocument<Lang extends string = string> =
     Lang
   >;
 
+/**
+ * Content for Settings documents
+ */
+interface SettingsDocumentData {
+  /**
+   * CTA_title field in *Settings*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.cta_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  cta_title: prismic.RichTextField;
+
+  /**
+   * CTA Label field in *Settings*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.cta_label
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  cta_label: prismic.KeyTextField;
+
+  /**
+   * CTA Link field in *Settings*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.cta_link
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  cta_link: prismic.LinkField;
+}
+
+/**
+ * Settings document from Prismic
+ *
+ * - **API ID**: `settings`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type SettingsDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<
+    Simplify<SettingsDocumentData>,
+    "settings",
+    Lang
+  >;
+
 export type AllDocumentTypes =
   | CaseResultDocument
   | HomeDocument
   | PageDocument
-  | PraticeareaDocument;
+  | PraticeareaDocument
+  | SettingsDocument;
 
 /**
  * Primary content in *AboutLawFirm → Primary*
@@ -583,68 +638,6 @@ export type CaseResultsSlice = prismic.SharedSlice<
   "case_results",
   CaseResultsSliceVariation
 >;
-
-/**
- * Primary content in *Cta → Primary*
- */
-export interface CtaSliceDefaultPrimary {
-  /**
-   * Title field in *Cta → Primary*
-   *
-   * - **Field Type**: Title
-   * - **Placeholder**: *None*
-   * - **API ID Path**: cta.primary.title
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  title: prismic.TitleField;
-
-  /**
-   * Button Label field in *Cta → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: cta.primary.button_label
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  button_label: prismic.KeyTextField;
-
-  /**
-   * Button Link field in *Cta → Primary*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: cta.primary.button_link
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  button_link: prismic.LinkField;
-}
-
-/**
- * Default variation for Cta Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type CtaSliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Simplify<CtaSliceDefaultPrimary>,
-  never
->;
-
-/**
- * Slice variation for *Cta*
- */
-type CtaSliceVariation = CtaSliceDefault;
-
-/**
- * Cta Shared Slice
- *
- * - **API ID**: `cta`
- * - **Description**: Cta
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type CtaSlice = prismic.SharedSlice<"cta", CtaSliceVariation>;
 
 /**
  * Primary content in *Faq → Primary*
@@ -932,6 +925,8 @@ declare module "@prismicio/client" {
       PraticeareaDocument,
       PraticeareaDocumentData,
       PraticeareaDocumentDataSlicesSlice,
+      SettingsDocument,
+      SettingsDocumentData,
       AllDocumentTypes,
       AboutLawFirmSlice,
       AboutLawFirmSliceDefaultPrimary,
@@ -946,10 +941,6 @@ declare module "@prismicio/client" {
       CaseResultsSliceDefaultPrimary,
       CaseResultsSliceVariation,
       CaseResultsSliceDefault,
-      CtaSlice,
-      CtaSliceDefaultPrimary,
-      CtaSliceVariation,
-      CtaSliceDefault,
       FaqSlice,
       FaqSliceDefaultPrimary,
       FaqSliceVariation,

@@ -6,7 +6,6 @@ export const components = {
   about_law_firm: dynamic(() => import("./AboutLawFirm")),
   biography: dynamic(() => import("./Biography")),
   case_results: dynamic(() => import("./CaseResults")),
-  cta: dynamic(() => import("./Cta")),
   faq: dynamic(() => import("./Faq")),
   hero: dynamic(() => import("./Hero")),
   pratice_areas: dynamic(() => import("./PraticeAreas")),
